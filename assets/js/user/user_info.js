@@ -11,8 +11,8 @@ $(function () {
             layui.form.val('fUInfo', res.data);  //快速赋值
 
          }
-      })
-   }
+      });
+   };
 
    $('form').on('submit', function (e) {
       e.preventDefault();
@@ -27,12 +27,15 @@ $(function () {
          id: id,
          nickname: $('#nickname').val(),
          email: $('#email').val()
-      })
-   })
+      },function(res){
+         if (res.status !== 0) return layer.msg ('修改失败!');
+         layer.msg ('修改成功!')
+      });
+   });
 
 
    $('#resets').on('click', function (e) {
       e.preventDefault();
       setAjax();
-   })
+   });
 }) //end
