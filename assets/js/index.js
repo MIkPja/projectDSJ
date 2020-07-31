@@ -16,8 +16,8 @@ $(function () {
 		// },
 		//不管请求成功和失败 都会调用这个函数
 		//complete函数只需要写一份就够了
-		complete:function(res){
-			if (res.responseJSON.status ==1) {
+		complete: function (res) {
+			if (res.responseJSON.status == 1) {
 				localStorage.removeItem('token'); //防止黑客攻击
 				//如果没有登录信息就强制跳转到登录页
 				location.href = '/login.html';
@@ -57,16 +57,4 @@ $(function () {
 		});
 	})
 
-
-
-
-
-
-
-
-
-
-
 }) //end
-
-

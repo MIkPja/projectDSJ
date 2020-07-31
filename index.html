@@ -30,7 +30,8 @@
                   <dd><a href="">安全设置</a></dd>
                </dl>
             </li>
-            <li class="layui-nav-item"><a href="javascript:;" id="logout"><span class="iconfont icon-tuichu"></span>退出</a></li>
+            <li class="layui-nav-item"><a href="javascript:;" id="logout"><span
+                     class="iconfont icon-tuichu"></span>退出</a></li>
          </ul>
       </div>
       <!-- 字体图标 -->
@@ -42,7 +43,7 @@
             <div class="userinfo">
                <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
                <span class="text-avatar"></span>
-               <span class="welcome"></span>
+               <span id="welcome" class="welcome"></span>
             </div>
             <ul class="layui-nav layui-nav-tree" lay-shrink="all" lay-filter="test">
                <li class="layui-nav-item homeli">
@@ -60,9 +61,12 @@
                <li class="layui-nav-item">
                   <a href="javascript:;"><span class="iconfont icon-user"></span>个人中心</a>
                   <dl class="layui-nav-child">
-                     <dd><a href="/user/user_info.html" target="fm"><i class="layui-icon layui-icon-template"></i>基本资料</a></dd>
-                     <dd><a href="javascript:;"><i class="layui-icon layui-icon-template"></i>更换头像</a></dd>
-                     <dd><a href="javascript:;"><i class="layui-icon layui-icon-template"></i>重置密码</a></dd>
+                     <dd><a href="/user/user_info.html" target="fm"><i
+                              class="layui-icon layui-icon-template"></i>基本资料</a></dd>
+                     <dd><a href="/user/user_avatar.html" target="fm"><i
+                              class="layui-icon layui-icon-template"></i>更换头像</a></dd>
+                     <dd><a href="/user/user_pwd.html" target="fm"><i
+                              class="layui-icon layui-icon-template"></i>重置密码</a></dd>
                   </dl>
                </li>
             </ul>
@@ -85,6 +89,8 @@
    <script src="/assets/js/baseAPI.js"></script>
    <!-- 导入自己的js文件 -->
    <script src="/assets/js/index.js"></script>
+   <script src="/assets/js/user/user_info.js"></script>
+
 </body>
 
 </html>

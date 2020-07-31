@@ -13,7 +13,6 @@ $(function () {
          }
       });
    };
-
    $('form').on('submit', function (e) {
       e.preventDefault();
       //限制用户输入昵称长度
@@ -27,12 +26,12 @@ $(function () {
          id: id,
          nickname: $('#nickname').val(),
          email: $('#email').val()
-      },function(res){
-         if (res.status !== 0) return layer.msg ('修改失败!');
-         layer.msg ('修改成功!')
+      }, function (res) {
+         if (res.status !== 0) return layer.msg('修改失败!');
+         layer.msg('修改成功!');
+         var name = $('#nickname').val();
       });
    });
-
 
    $('#resets').on('click', function (e) {
       e.preventDefault();
