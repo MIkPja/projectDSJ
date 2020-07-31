@@ -30,6 +30,7 @@ $(function () {
          if (res.status !== 0) return layer.msg('修改失败!');
          layer.msg('修改成功!');
          var name = $('#nickname').val();
+         window.parent.getName(name)
       });
    });
 
